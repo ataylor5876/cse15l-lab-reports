@@ -9,8 +9,11 @@
 * List test
 1. Numbered list test
 2. Numbered list test
+
 Horizontal rule test:
 ---
+
 `Inline code test`
+
     code block test
     code block test
