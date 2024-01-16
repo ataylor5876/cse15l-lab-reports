@@ -40,5 +40,17 @@ By: Athena Taylor
 
 ## cat
 1. No Arguments
+
+![Image](cat1.png)
+
+>When I ran the cat command without arguments with home as my working directory, nothing happened at first. However, after that, the computer would repeat anything I >typed in. This isn't an error, though it's unlikely to be an outcome you'd want. Since I didn't pass in any files for it to read, it defaulted to taking input from the >terminal and outputting the content of that, which will be the same text you typed in.
 2. A Directory as an Argument
+
+![Image](cat2.png)
+
+>When I ran the cat command with "lecture1/messages" as the argument and home as my working directory, it resulted in an error. This happened because I passed in a path >to a directory, and cat can only print out the contents of files.
 3. A File as an Argument
+
+![Image](cat3.png)
+
+>When I ran the cat command with "lecture1/messages/en-us.txt" as the argument and home as my working directory, the computer printed out the phrase "Hello World!" This output is not an error. Like the lecture handout stated, the text contained in the en-us.txt file, which corresponds to the path I passed in, was printed out.
