@@ -59,6 +59,7 @@ class ChatServer {
 >Since the server had already been started, the only method that was called was `handleRequest` with the argument `localhost:4000/add-message?s=Hello&user=Tifa`. Before the method was called, the String field `chatroom` was empty. Calling the method with the specified argument concatenated the string "Tifa: Hello\n" to `chatroom`.
 
 
+
 ![Image](addmessage2.png)
 
 >Like before, the only method that was called was `handleRequest`. This time, the argument passed in was `localhost:4000/add-message?s=hi!&user=aerith`. Before the method was called, the String field `chatroom` contained the String "Tifa: Hello\n" from the above usage of `/add-message`. After the request, the String "aerith: hi!\n" was concatenated to `chatroom`.
@@ -66,18 +67,20 @@ class ChatServer {
 
 ## Part 2
 
+* Absolute path to private key
+
 ![Image](lbrp2p2a.png)
 
-
+* Absolute path to public key
 
 ![Image](lbrp2p2b.png)
 
-
+* Logging in without a password
 
 ![Image](lbrp2p2c.png)
 
 ## Part 3
 
->Before taking this class, I was vaguely aware that something known as ssh was important in the field of computer science, but I didn't know what it was or what it did. Now, I can use it to remotely log in to another computer.
+>Before taking this class, I was vaguely aware that something known as `ssh` was important in the field of computer science, but I didn't know what it was or what it did. Now, I can use it to remotely log in to another computer.
 
 
