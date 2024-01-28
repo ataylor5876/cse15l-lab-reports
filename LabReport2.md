@@ -56,13 +56,13 @@ class ChatServer {
 
 ![Image](addmessage1.png)
 
->Since the server had already been started, the only method that was called was `handleRequest` with the argument `localhost:4000/add-message?s=Hello&user=Tifa`. Before the method was called, the String field `chatroom` was empty. Calling the method with the specified argument concatenated the string "Tifa: Hello\n" to `chatroom`.
+>Since the server had already been started, the only method that was called was `handleRequest` with the argument `localhost:4000/add-message?s=Hello&user=Tifa`. Before the method was called, the String field `chatroom` was empty. Calling the method with the specified argument concatenated the string `"Tifa: Hello\n"` to `chatroom`.
 
 
 
 ![Image](addmessage2.png)
 
->Like before, the only method that was called was `handleRequest`. This time, the argument passed in was `localhost:4000/add-message?s=hi!&user=aerith`. Before the method was called, the String field `chatroom` contained the String "Tifa: Hello\n" from the above usage of `/add-message`. After the request, the String "aerith: hi!\n" was concatenated to `chatroom`.
+>Like before, the only method that was called was `handleRequest`. This time, the argument passed in was `localhost:4000/add-message?s=hi!&user=aerith`. Before the method was called, the String field `chatroom` contained the String `"Tifa: Hello\n"` from the above usage of `/add-message`. After the request, the String `"aerith: hi!\n"` was concatenated to `chatroom`.
 
 
 ## Part 2
