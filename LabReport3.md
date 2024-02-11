@@ -19,3 +19,27 @@ static double averageWithoutLowest(double[] arr) {
     return sum / (arr.length - 1);
   }
 ```
+* Failure-inducing Input
+```
+@Test
+  public void failureInducingInput() {
+    double[] testArray = {2.0, 2.0, 4.0, 6.0};
+    double expectedOutput = 5.0;
+    double actualOutput = ArrayExamples.averageWithoutLowest(testArray); 
+    assertEquals(expectedOutput, actualOutput, 0.001);
+  }
+```
+* Non-failure-inducing Input
+```
+@Test
+  public void nonFailureInducingInput() {
+    double[] testArray = {2.0};
+    double expectedOutput = 0.0;
+    double actualOutput = ArrayExamples.averageWithoutLowest(testArray); 
+    assertEquals(expectedOutput, actualOutput, 0.001);
+  }
+```
+* Symptom
+![Image](Lab5Symptom)
+* Fixed Code
+* 
