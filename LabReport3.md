@@ -40,6 +40,7 @@ static double averageWithoutLowest(double[] arr) {
   }
 ```
 * Symptom
+
 ![Image](Lab5Symptom.png)
 * Fixed Code
 ```
