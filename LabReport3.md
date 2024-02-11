@@ -42,4 +42,20 @@ static double averageWithoutLowest(double[] arr) {
 * Symptom
 ![Image](Lab5Symptom)
 * Fixed Code
-* 
+```
+static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
+    double sum = 0;
+    double numLowest = arr.length;
+    for(double num: arr) {
+      if(num != lowest) { sum += num; numLowest--; }
+    }
+    return sum / (arr.length - numLowest);
+  }
+```
+> The original code didn't account for a situation in which the array passed in had multiple copies of the lowest number. So, I added a counter variable to keep track of the number of copies of the lowest variable and subtracted it from arr.length at the end instead of 1.
+## Part 2
