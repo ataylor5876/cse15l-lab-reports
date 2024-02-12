@@ -60,7 +60,7 @@ static double averageWithoutLowest(double[] arr) {
 ```
 > The original code didn't account for a situation in which the array passed in had multiple copies of the lowest number. So, I added a counter variable to keep track of the number of copies of the lowest variable and subtracted it from arr.length at the end instead of 1.
 ## Part 2 (Find)
-* [Information Source for all O](https://tecadmin.net/linux-find-command-with-examples/)
+* [Information Source for all Options](https://tecadmin.net/linux-find-command-with-examples/)
 * -name
 > Working directory for both examples: ~/Documents/UCSD Documents/Winter 2024 Classes/CSE 15L/CSE 15L Lab 5/docsearch
 ```
@@ -71,4 +71,5 @@ $ find ./technical -name 'chapter-8.txt'
 $ find ./technical -name 'athena-taylor.txt'
 
 ```
-> Find -name 
+> find [PATH] -name [EXPRESSION] searchs through the directory provided via PATH for files and directories named the string provided via EXPRESSION. As you can see in the first example, if it finds a file or directory that matches the name provided, it will return the path of the file or directory. As you can see in the second example, it won't return anything if it cannot find a file or directory that matches the criteria. This command is useful if you're trying to find a specific file in a massive repository.
+* -type 
