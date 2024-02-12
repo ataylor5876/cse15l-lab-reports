@@ -59,4 +59,16 @@ static double averageWithoutLowest(double[] arr) {
   }
 ```
 > The original code didn't account for a situation in which the array passed in had multiple copies of the lowest number. So, I added a counter variable to keep track of the number of copies of the lowest variable and subtracted it from arr.length at the end instead of 1.
-## Part 2
+## Part 2 (Find)
+* [Information Source for all O](https://tecadmin.net/linux-find-command-with-examples/)
+* -name
+> Working directory for both examples: ~/Documents/UCSD Documents/Winter 2024 Classes/CSE 15L/CSE 15L Lab 5/docsearch
+```
+$ find ./technical -name 'chapter-8.txt'
+./technical/911report/chapter-8.txt
+```
+```
+$ find ./technical -name 'athena-taylor.txt'
+
+```
+> Find -name 
