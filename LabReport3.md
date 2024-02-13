@@ -59,21 +59,28 @@ static double averageWithoutLowest(double[] arr) {
   }
 ```
 > The original code didn't account for a situation in which the array passed in had multiple copies of the lowest number. So, I added a counter variable to keep track of the number of copies of the lowest variable and subtracted it from arr.length at the end instead of 1.
+
 ## Part 2 (Find)
 * [Information Source for all Options](https://tecadmin.net/linux-find-command-with-examples/)
 * -name
+
 > Working directory for both examples: ~/Documents/UCSD Documents/Winter 2024 Classes/CSE 15L/CSE 15L Lab 5/docsearch
+
 ```
 $ find ./technical -name 'chapter-8.txt'
 ./technical/911report/chapter-8.txt
 ```
+
 ```
 $ find ./technical -name 'athena-taylor.txt'
 
 ```
+
 > find [PATH] -name [EXPRESSION] searchs through the directory provided via PATH for files and directories named the string provided via EXPRESSION. As you can see in the first example, if it finds a file or directory that matches the name provided, it will return the path of the file or directory. As you can see in the second example, it won't return anything if it cannot find a file or directory that matches the criteria. This command is useful if you're trying to find a specific file in a massive repository.
+
 * -type
 > Working directory for both examples: ~/Documents/UCSD Documents/Winter 2024 Classes/CSE 15L/CSE 15L Lab 5/docsearch
+
 ```
 $ find ./technical -type f | head
 ./technical/911report/chapter-1.txt
@@ -87,6 +94,7 @@ $ find ./technical -type f | head
 ./technical/911report/chapter-13.5.txt
 ./technical/911report/chapter-2.txt
 ```
+
 ```
 $ find ./technical -type d
 ./technical
@@ -101,9 +109,12 @@ $ find ./technical -type d
 ./technical/government/Post_Rate_Comm    
 ./technical/plos
 ```
+
 > find [PATH] -type [EXPRESSION] searches through the directory provided by PATH and outputs the path of everything that is the type provided by EXPRESSION. In the first example, EXPRESSION was f, so the computer outputted the paths of all the files in the technical directory. Since I also used the head command, it only printed out the paths of the first 10 files it found. In the second example, EXPRESSION was d, so the computer outputted the paths of all the directories contained in the technical directory. The command is useful when you want to separate files by type.
+
 * -size
 > Working directory for both examples: ~/Documents/UCSD Documents/Winter 2024 Classes/CSE 15L/CSE 15L Lab 5/docsearch
+
 ```
 $ find ./technical -size +200k
 ./technical/911report/chapter-13.4.txt
@@ -116,6 +127,7 @@ $ find ./technical -size +200k
 ./technical/government/Gen_Account_Office/pe1019.txt
 ./technical/government/Gen_Account_Office/Statements_Feb28-1997_volume.txt
 ```
+
 ```
 $ find ./technical -size -50k | head
 ./technical
@@ -129,9 +141,12 @@ $ find ./technical -size -50k | head
 ./technical/biomed/1468-6708-3-4.txt
 ./technical/biomed/1468-6708-3-7.txt
 ```
+
 > find [PATH] -size [EXPRESSION] searches through the directory provided by PATH and outputs all things that fit the size parameter provided by EXPRESSION. In the first example, EXPRESSION was +200k, so the computer outputted the paths of everything that is bigger than 200 kilobytes. In the second example, EXPRESSION was -50k, so the computer outputted the paths of everything that is smaller than 50 kilobytes. Since I also used the head command, it only printed the first 10 files it found. This command would be useful if your project had excess memory issues, and you needed to find the source of the problem.
+
 * -mtime
 > Working directory for both examples: ~/Documents/UCSD Documents/Winter 2024 Classes/CSE 15L/CSE 15L Lab 5/docsearch
+
 ```
 $ find ./technical -mtime -7 | head
 ./technical
@@ -145,7 +160,9 @@ $ find ./technical -mtime -7 | head
 ./technical/911report/chapter-13.3.txt
 ./technical/911report/chapter-13.4.txt
 ```
+
 ```
 $ find ./technical -mtime +30
 ```
+
 > find [PATH] -mtime [EXPRESSION] searches through the directory provided by PATH and outputs everthing that was modified within the time parameter provided by EXPRESSION. In the first example, EXPRESSION was -7, so the computer outputted the paths of everything that was modified within the last seven days. Since I also used the head command, it only printed the first 10 files it found. In the second example, EXPRESSION was +30, so the computer outputted the paths of everything that was modified over 30 days ago. Since nothing contained in the technical directory was modified that long ago, the computer outputted nothing. This command would be useful if you wanted to know when a project was last worked on.
