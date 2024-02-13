@@ -79,6 +79,7 @@ $ find ./technical -name 'athena-taylor.txt'
 > find [PATH] -name [EXPRESSION] searchs through the directory provided via PATH for files and directories named the string provided via EXPRESSION. As you can see in the first example, if it finds a file or directory that matches the name provided, it will return the path of the file or directory. As you can see in the second example, it won't return anything if it cannot find a file or directory that matches the criteria. This command is useful if you're trying to find a specific file in a massive repository.
 
 * -type
+
 > Working directory for both examples: ~/Documents/UCSD Documents/Winter 2024 Classes/CSE 15L/CSE 15L Lab 5/docsearch
 
 ```
@@ -113,6 +114,7 @@ $ find ./technical -type d
 > find [PATH] -type [EXPRESSION] searches through the directory provided by PATH and outputs the path of everything that is the type provided by EXPRESSION. In the first example, EXPRESSION was f, so the computer outputted the paths of all the files in the technical directory. Since I also used the head command, it only printed out the paths of the first 10 files it found. In the second example, EXPRESSION was d, so the computer outputted the paths of all the directories contained in the technical directory. The command is useful when you want to separate files by type.
 
 * -size
+
 > Working directory for both examples: ~/Documents/UCSD Documents/Winter 2024 Classes/CSE 15L/CSE 15L Lab 5/docsearch
 
 ```
@@ -145,6 +147,7 @@ $ find ./technical -size -50k | head
 > find [PATH] -size [EXPRESSION] searches through the directory provided by PATH and outputs all things that fit the size parameter provided by EXPRESSION. In the first example, EXPRESSION was +200k, so the computer outputted the paths of everything that is bigger than 200 kilobytes. In the second example, EXPRESSION was -50k, so the computer outputted the paths of everything that is smaller than 50 kilobytes. Since I also used the head command, it only printed the first 10 files it found. This command would be useful if your project had excess memory issues, and you needed to find the source of the problem.
 
 * -mtime
+
 > Working directory for both examples: ~/Documents/UCSD Documents/Winter 2024 Classes/CSE 15L/CSE 15L Lab 5/docsearch
 
 ```
