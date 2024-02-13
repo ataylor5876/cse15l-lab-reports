@@ -129,7 +129,7 @@ $ find ./technical -size -50k | head
 ./technical/biomed/1468-6708-3-4.txt
 ./technical/biomed/1468-6708-3-7.txt
 ```
-> Work in Progess
+> find [PATH] -size [EXPRESSION] searches through the directory provided by PATH and outputs all things that fit the size parameter provided by EXPRESSION. In the first example, EXPRESSION was +200k, so the computer outputted the paths of everything that is bigger than 200 kilobytes. In the second example, EXPRESSION was -50k, so the computer outputted all the paths of everything that is smaller than 50 kilobytes. Since I also used the head command, it only printed the first 10 files it found. This command would be useful if your project had excess memory issues, and you needed to find the source of the problem.
 * -mtime
 > Working directory for both examples: ~/Documents/UCSD Documents/Winter 2024 Classes/CSE 15L/CSE 15L Lab 5/docsearch
 ```
@@ -148,4 +148,4 @@ $ find ./technical -mtime -7 | head
 ```
 $ find ./technical -mtime +30
 ```
->
+> find [PATH] -mtime [EXPRESSION] searches through the directory provided by PATH and outputs everthing that was modified within the time parameter provided by EXPRESSION. In the first example, EXPRESSION was -7, so the computer outputted the paths of everything that was modified within the last seven days. Since I also used the head command, it only printed the first 10 files it found. In the second example, EXPRESSION was +30, so the computer outputted the paths of everything that was modified over 30 days ago. Since nothing contained in the technical directory was modified that long ago, the computer outputted nothing. This command would be useful if you wanted to know when a project was last worked on.
