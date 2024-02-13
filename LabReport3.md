@@ -129,3 +129,23 @@ $ find ./technical -size -50k | head
 ./technical/biomed/1468-6708-3-4.txt
 ./technical/biomed/1468-6708-3-7.txt
 ```
+> Work in Progess
+* -mtime
+> Working directory for both examples: ~/Documents/UCSD Documents/Winter 2024 Classes/CSE 15L/CSE 15L Lab 5/docsearch
+```
+$ find ./technical -mtime -7 | head
+./technical
+./technical/911report
+./technical/911report/chapter-1.txt
+./technical/911report/chapter-10.txt
+./technical/911report/chapter-11.txt
+./technical/911report/chapter-12.txt
+./technical/911report/chapter-13.1.txt
+./technical/911report/chapter-13.2.txt
+./technical/911report/chapter-13.3.txt
+./technical/911report/chapter-13.4.txt
+```
+```
+$ find ./technical -mtime +30
+```
+>
