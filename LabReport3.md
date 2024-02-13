@@ -102,3 +102,30 @@ $ find ./technical -type d
 ./technical/plos
 ```
 > find [PATH] -type [EXPRESSION] searches through the directory provided by PATH and outputs the path of everything that is the type provided by EXPRESSION. In the first example, EXPRESSION was f, so the computer outputted the paths of all the files in the technical directory. Since I also used the head command, it only printed out the paths of the first 10 files it found. In the second example, EXPRESSION was d, so the computer outputted the paths of all the directories contained in the technical directory. The command is useful when you want to separate files by type.
+* -size
+> Working directory for both examples: ~/Documents/UCSD Documents/Winter 2024 Classes/CSE 15L/CSE 15L Lab 5/docsearch
+```
+$ find ./technical -size +200k
+./technical/911report/chapter-13.4.txt
+./technical/911report/chapter-13.5.txt
+./technical/911report/chapter-3.txt
+./technical/government/About_LSC/commission_report.txt
+./technical/government/Env_Prot_Agen/bill.txt
+./technical/government/Gen_Account_Office/d01591sp.txt
+./technical/government/Gen_Account_Office/GovernmentAuditingStandards_yb2002ed.txt
+./technical/government/Gen_Account_Office/pe1019.txt
+./technical/government/Gen_Account_Office/Statements_Feb28-1997_volume.txt
+```
+```
+$ find ./technical -size -50k | head
+./technical
+./technical/911report
+./technical/911report/chapter-10.txt
+./technical/911report/preface.txt
+./technical/biomed
+./technical/biomed/1468-6708-3-1.txt
+./technical/biomed/1468-6708-3-10.txt
+./technical/biomed/1468-6708-3-3.txt
+./technical/biomed/1468-6708-3-4.txt
+./technical/biomed/1468-6708-3-7.txt
+```
