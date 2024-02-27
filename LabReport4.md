@@ -11,7 +11,7 @@ By: Athena Taylor
 Keys Pressed: ssh actaylor@ieng6-202.ucsd.edu<enter>
 ```
 
-> I logged into my ieng6 account using the standard command
+> I logged into my ieng6 account using the standard command.
 
 
 ## Step 5
@@ -19,7 +19,7 @@ Keys Pressed: ssh actaylor@ieng6-202.ucsd.edu<enter>
 ![Image](lab7-step5.png)
 
 ```
-Keys Pressed: git clone <Ctrl+V><enter>
+Keys Pressed: git clone <Ctrl+v><enter>
 ```
 
 > I cloned my fork using the ssh clone URL, which I had copied to my clipboard.
@@ -33,7 +33,7 @@ Keys Pressed: cd lab<enter>
               bash test.sh<enter>
 ```
 
-> I changed my working directory to the cloned lab7 repository using the 'cd' command. I then ran the 'test.sh' script, which contains the commands that compile all the java files and run the test.
+> I changed my working directory to the cloned lab7 repository using the `cd` command. I then ran the `test.sh` script, which contains the commands that compile all the java files and run the tests.
 
 
 ## Step 7
