@@ -72,4 +72,4 @@ Keys Pressed: git add Li<tab><enter>
               git push
 ```
 
-> I used the `git add ListExamples.java` to register the changed file in the repository. I used `tab` to type `ListExamples.java` faster. I then used `git commit -m "Fixed bug in ListExamples.java"` to commit the       > change I made. Finally, I used `git push` to apply the change to the `main` branch.
+> I used the `git add ListExamples.java` to register the changed file in the repository. I used `tab` to type `ListExamples.java` faster. I then used `git commit -m "Fixed bug in ListExamples.java"` to commit the        change I made. Finally, I used `git push` to apply the change to the `main` branch.
