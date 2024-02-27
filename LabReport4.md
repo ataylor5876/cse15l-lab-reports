@@ -48,7 +48,7 @@ Keys Pressed: vim L<tab>.java<enter>
               nnnnnnnnnlllllxi2<esc>:wq<enter>
 ```
 
-> I used vim to edit the code in `ListExamples.java`, which I used `tab` to type faster. I then used `/index1` to search for the first instance of `index1` in the text. I then repeatedly pressed `n` to cycle through
+> I used `vim` to edit the code in `ListExamples.java`, which I used `tab` to type faster. I then used `/index1` to search for the first instance of `index1` in the text. I then repeatedly pressed `n` to cycle through
 > the instances until I found the one I needed to edit. I also used `l` repeatedly to move the cursor to the end of the word. I then used `x` to delete the last character and `i2<esc>` to replace it. Finally, I used
 > `:wq<enter>` to save the file and exit.
 
