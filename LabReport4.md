@@ -29,7 +29,7 @@ Keys Pressed: git clone <Ctrl+v><enter>
 ![Image](lab7-step6.png)
 
 ```
-Keys Pressed: cd lab<enter>
+Keys Pressed: cd lab7<enter>
               bash test.sh<enter>
 ```
 
@@ -68,7 +68,7 @@ Keys Pressed: <up><up><enter>
 
 ```
 Keys Pressed: git add Li<tab><enter>
-              git commit -m "Fixed bug in ListExamples.java"
+              git commit -m "Fixed bug in ListExamples.java"<enter>
               git push
 ```
 
