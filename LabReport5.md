@@ -140,7 +140,7 @@ bash tesh.sh
 
 > Fix
 
-> Change line 12 in StringChecker.java from `if(args[0] != args[1])` to `if(!(args[0].equals(args[1])))`
+> Change line 12 in `StringChecker.java` from `if(args[0] != args[1])` to `if(!(args[0].equals(args[1])))`
 
 
 ## Part 2
