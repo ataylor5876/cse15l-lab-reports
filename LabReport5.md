@@ -45,30 +45,43 @@ By: Athena Taylor
 > File Contents
 
 > `MoreThanTwoStringsTest.txt`
+
 ```
 String1 String2 String3
 ```
+
 > `MoreThanTwoStringsTest.txt.expect`
+
 ```
 Please give two strings as input.
 ```
+
 > `TwoEqualStringsTest.txt`
+
 ```
 String1 String1
 ```
+
 > `TwoEqualStringsTest.txt.expect`
+
 ```
 Equal.
 ```
+
 > `TwoNonEqualStringsTest.txt`
+
 ```
 String1 String2
 ```
+
 > `TwoNonEqualStringsTest.txt.expect`
+
 ```
 Not equal.
 ```
+
 > `StringChecker.java`
+
 ```
 public class StringChecker
 {
@@ -93,6 +106,7 @@ public class StringChecker
     }
 }
 ```
+
 > `test.sh`
 
 ```
