@@ -5,6 +5,7 @@ By: Athena Taylor
 
 ## Part 1
 * Initial Post
+
 > Jane Doe
 >   
 > Hi!  
@@ -16,6 +17,7 @@ By: Athena Taylor
 > Could you help me figure out what the problem is?
 
 * TA Response
+
 > Athena Taylor  
 >
 >   
@@ -24,6 +26,7 @@ By: Athena Taylor
 
 
 * Student Follow-up
+
 > Jane Doe
 >
 > You were right! I used the equals method to compare the strings instead of != and now all the test cases are working.
@@ -34,6 +37,7 @@ By: Athena Taylor
 > Thank you!
 
 * Setup Information
+
 > File Structure
 
 ![Image](lab-report-5-file-structure.png)
@@ -90,10 +94,10 @@ public class StringChecker
 }
 ```
 > `test.sh`
+
 ```
 set -e
 javac StringChecker.java
-
 for TEST in test-files/*.txt 
 do
     echo "Testing: $TEST"
